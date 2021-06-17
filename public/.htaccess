@@ -1,0 +1,18 @@
+php_value upload_max_filesize 15M
+php_value post_max_size 15M
+
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^reset?$ /view/pages/reset.php [L]
+RewriteRule ^verify?$ /view/pages/verify.php [L]
+RewriteRule ^signout?$ /views/pages/signout.php [L]
+RewriteRule ^controller?$ /includes/controller.php [L]
+RewriteRule ^upload?$ /includes/upload.php [L]
+
+RewriteCond %{REQUEST_URI} ^/(styles|assets|js|models|views|includes)/
+RewriteRule . - [S=3] #skip the next 3 rules if the RewriteCond match
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]

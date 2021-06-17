@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../../assets/fonts/Inter-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../../assets/fonts/Inter-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../../assets/fonts/Inter-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../../assets/fonts/Inter-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../../assets/fonts/Inter-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../../assets/fonts/Inter-Medium.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../../assets/fonts/Inter-Medium.otf") format("opentype"), /* Open Type Font */
+    url("../../assets/fonts/Inter-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../../assets/fonts/Inter-Medium.woff") format("woff"), /* Modern Browsers */
+    url("../../assets/fonts/Inter-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../../assets/fonts/Inter-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../../assets/fonts/Inter-Bold.otf") format("opentype"), /* Open Type Font */
+    url("../../assets/fonts/Inter-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../../assets/fonts/Inter-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../../assets/fonts/Inter-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpaceMono-Regular";
+  src: url("../../assets/fonts/SpaceMono-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/SpaceMono-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../../assets/fonts/SpaceMono-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../../assets/fonts/SpaceMono-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../../assets/fonts/SpaceMono-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../../assets/fonts/SpaceMono-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SpaceMono-Bold";
+  src: url("../../assets/fonts/SpaceMono-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/SpaceMono-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../../assets/fonts/SpaceMono-Bold.otf") format("opentype"), /* Open Type Font */
+    url("../../assets/fonts/SpaceMono-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../../assets/fonts/SpaceMono-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../../assets/fonts/SpaceMono-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-smoothing() {
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
+
+@mixin Inter-Regular() {
+    font-family: "Inter-Regular";
+    font-style: normal;
+    @include font-smoothing();
+}
+@mixin Inter-Medium() {
+    font-family: 'Inter-Medium';
+    font-style: normal;
+    @include font-smoothing();
+}
+@mixin Inter-Bold() {
+    font-family: 'Inter-Bold';
+    font-style: normal;
+    @include font-smoothing();
+}
+@mixin SpaceMono-Regular() {
+    font-family: 'SpaceMono-Regular';
+    font-style: normal;
+    @include font-smoothing();
+}
+@mixin SpaceMono-Bold() {
+    font-family: 'SpaceMono-Bold';
+    font-style: normal;
+    @include font-smoothing();
+}

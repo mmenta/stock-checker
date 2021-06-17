@@ -1,0 +1,13 @@
+{
+  "editor": {
+    "tabLength": 4,
+    "preferredLineLength": 100,
+    "showIndentGuide": true,
+    "tabType": "soft"
+  },
+  "prettier-atom": {
+    "formatOnSaveOptions": {
+      "enabled": true
+    }
+  }
+}
