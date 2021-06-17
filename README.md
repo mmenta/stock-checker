@@ -1,4 +1,4 @@
-# Quantasy 2020 Web Template
+# bb gpu stock check
 
 ### Vagrant box info
 
